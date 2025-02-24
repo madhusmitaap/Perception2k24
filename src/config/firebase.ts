@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-	apiKey: "AIzaSyAXtZQRoPFJ_0gZ9GswVlnolU9TXnjBOPY",
+	apiKey: "AIzaSyBs4lAURvlubGiuRss-zuPUkCwAX2issyc",
 	authDomain: "perception-outr.firebaseapp.com",
 	projectId: "perception-outr",
 	storageBucket: "perception-outr.appspot.com",
