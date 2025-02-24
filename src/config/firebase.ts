@@ -8,9 +8,9 @@ const firebaseConfig = {
 	authDomain: "perception-outr.firebaseapp.com",
 	projectId: "perception-outr",
 	storageBucket: "perception-outr.appspot.com",
-	messagingSenderId: "421434351285",
-	appId: "1:421434351285:web:f4f53c46e61932c8f9e8fc",
-	measurementId: "G-EPGX8VY765",
+	// messagingSenderId: "421434351285",
+	// appId: "1:421434351285:web:f4f53c46e61932c8f9e8fc",
+	// measurementId: "G-EPGX8VY765",
 };
 
 const app = initializeApp(firebaseConfig);
