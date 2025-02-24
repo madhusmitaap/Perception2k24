@@ -1,0 +1,162 @@
+@import url('@/assets/fonts/font.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap');
+
+:root
+{
+	--box-shadow-primary: 0px 0.7px 10.2px color-mix(in lab, var(--accent-primary) 25%, transparent),
+		0px 2.2px 25.9px color-mix(in lab, var(--accent-primary) 36%, transparent),
+		0px 5.5px 52.8px color-mix(in lab, var(--accent-primary) 44%, transparent),
+		0px 13px 108.8px color-mix(in lab, var(--accent-primary) 56%, transparent),
+		0px 32px 298px color-mix(in lab, var(--accent-primary) 9%, transparent);
+	--box-shadow-primary-2: 0px 0.7px 20.2px color-mix(in lab, var(--accent-primary) 55%, transparent),
+		0px 2.2px 35.9px color-mix(in lab, var(--accent-primary) 56%, transparent),
+		0px 5.5px 62.8px color-mix(in lab, var(--accent-primary) 94%, transparent),
+		0px 13px 158.8px color-mix(in lab, var(--accent-primary) 86%, transparent),
+		0px 32px 398px color-mix(in lab, var(--accent-primary) 39%, transparent);
+	--box-shadow-secondary: 0px 0.7px 10.2px color-mix(in lab, var(--accent-secondary) 25%, transparent),
+		0px 2.2px 25.9px color-mix(in lab, var(--accent-secondary) 36%, transparent),
+		0px 5.5px 52.8px color-mix(in lab, var(--accent-secondary) 44%, transparent),
+		0px 13px 108.8px color-mix(in lab, var(--accent-secondary) 56%, transparent),
+		0px 32px 298px color-mix(in lab, var(--accent-secondary) 9%, transparent);
+}
+
+body
+{
+	scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar
+{
+	background: transparent;
+	width: 8px;
+	border-radius: 100vh;
+}
+
+:is(:not(body))::-webkit-scrollbar-thumb
+{
+	background: var(--accent-primary);
+	border-radius: 100vh;
+}
+
+:is(:not(body))::-webkit-scrollbar-thumb:hover
+{
+	background: color-mix(in lab, var(--accent-primary), transparent 50%);
+	border-radius: 100vh;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background: var(--accent-primary);
+	border-radius: 100vh;
+}
+
+body::-webkit-scrollbar-thumb:hover
+{
+	background: color-mix(in lab, var(--accent-primary), transparent 50%);
+	border-radius: 100vh;
+}
+
+::selection
+{
+	background-color: color-mix(in lab, var(--accent-primary), transparent 60%);
+}
+
+
+@keyframes heading-animation
+{
+	from
+	{
+		filter: drop-shadow(0 0 40px var(--accent-primary)) drop-shadow(0 0 100px var(--deep-blue));
+		/* scale: 1.2; */
+	}
+
+	to
+	{
+		filter: drop-shadow(0 0 15px var(--accent-primary)) drop-shadow(0 0 30px var(--deep-blue));
+		/* scale: 1; */
+	}
+}
+
+@keyframes fade-in
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 0.4;
+	}
+}
+
+@keyframes fade-in-full
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+img[data-visible="active"]
+{
+	display: block;
+}
+
+img[data-visible="inactive"]
+{
+	display: none;
+}
+
+@keyframes animation1
+{
+
+	10%,
+	90%
+	{
+		transform: rotateY(0deg);
+		z-index: 2;
+	}
+
+	40%,
+	60%
+	{
+
+		transform: rotateY(180deg);
+		z-index: 1;
+	}
+
+}
+
+@keyframes animation2
+{
+
+	10%,
+	90%
+	{
+		transform: rotateY(180deg);
+		z-index: 1;
+	}
+
+	40%,
+	60%
+	{
+
+		transform: rotateY(0deg);
+		z-index: 2;
+	}
+
+}
+
+@keyframes inc-box-shadow
+{
+	50%
+	{
+		box-shadow: 0px 2.7px 52px var(--accent-primary);
+	}
+}
